@@ -1,0 +1,43 @@
+\chapter{Funktionale Anforderungen}
+
+%\section{Systemkontext}
+
+\section{Systemfunktionen}
+
+\newcounter{pfc}\setcounter{pfc}{10}
+
+\begin{description}[leftmargin=5em, style=sameline]
+	
+	\begin{lhp}{pfc}{LF}{funk:spielverw}
+		\item [Name:] Spielverwaltung
+		\item [Beschreibung:] Das System verwaltet das von mehreren Spielern geteiltes Spiel in einem Spielraum. Das Spiel erfolgt nach den Spielregeln.
+	\end{lhp}
+	
+	\begin{lhp}{pfc}{LF}{funk:zugriff}
+		\item [Name:] Zugriffsverwaltung
+		\item [Beschreibung:] Das System verwaltet den Zugang zum Spiel anhand Benutzerdaten. Spieler können sich registrieren, anmelden, abmelden sowie ihre Kontos löschen.
+	\end{lhp}
+
+	\begin{lhp}{pfc}{LF}{funk:spielraum}
+		\item [Name:] Verwaltung der Spielräume
+		\item [Beschreibung:] Das System verwaltet die Erstellung, Änderung und Löschung der Spielräume.
+	\end{lhp}
+	
+	\begin{lhp}{pfc}{LF}{funk:bestenliste}
+		\item [Name:] Bestenliste
+		\item [Beschreibung:] Die Anzahl der gewonnen Spiele aller Spieler anzeigen.
+	\end{lhp}
+	
+	\begin{lhp}{pfc}{LF}{funk:bots}
+		\item [Name:] Intelligente Bots
+		\item [Beschreibung:] Das System verwaltet die Aktionen der Bots mithilfe vorgefertiger Entscheidungsalgorithmen. Ein Selbstlernen zur Laufzeit ist nicht vorgesehen.
+	\end{lhp}
+	
+	\begin{lhp}{pfc}{LF}{funk:chat}
+		\item [Name:] Chat
+		\item [Beschreibung:] Im Chat können die Spieler untereinander in Echtzeit chatten und sich austauschen. Dabei gibt es einen Warteraum-Chat und einen Chat im aktuellen Spiel. Der Chat ist ein reiner Gruppenchat. Sachen die in den Chat geschrieben werden können auf unangepasste Wörter durchsucht werden und eventuell können Spieler bei solchen Wörtern vom Chat ausgeschlossen werden.
+	\end{lhp}
+
+\end{description}
+
+

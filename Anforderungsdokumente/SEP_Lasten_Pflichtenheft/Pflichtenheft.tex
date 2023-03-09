@@ -1,0 +1,35 @@
+\input{preamble}
+\input{custom_commands}
+
+\zexternaldocument*{Lastenheft}
+
+\makeatletter
+	\newcommand{\mysubject}{Pflichtenheft}
+	\newcommand{\mygroup}{Gruppe 2}
+	\newcommand{\myauthor}{%
+		Hendrik Wolf \\
+		Fabian Dietrich \\
+		Yannic Schopfer \\
+		Ryan Antipow \\
+		Dorcy Agape Hakizimana %
+	}
+\makeatother
+
+\begin{document}
+
+	\include{titlepage}
+
+	\tableofcontents
+
+	\include{las_tex/treiber}
+	\include{las_tex/beschraenkungen}
+	\include{las_tex/funktional}
+	\include{pfl_tex/usecases}
+	\include{las_tex/daten}
+	%\include{pfl_tex/daten}
+	\include{las_tex/nichtfunktional}
+	\include{pfl_tex/gui}	
+	\include{pfl_tex/tests}
+	\include{las_tex/warteraum}
+	
+\end{document}

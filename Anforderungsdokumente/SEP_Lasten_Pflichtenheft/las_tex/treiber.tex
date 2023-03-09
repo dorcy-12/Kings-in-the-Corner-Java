@@ -1,0 +1,54 @@
+\chapter{Projekttreiber}
+
+\section{Projektziel}
+
+Im Rahmen des Software-Entwicklungs-Projekts {\the\year} soll ein einfach zu bedienendes Client-Server-System zum Spielen von \textit{Kings in the Corner} über ein Netzwerk implementiert werden. Die Benutzeroberfläche soll intuitiv bedienbar sein.
+
+\section{Stakeholders}
+
+\newcounter{sh}\setcounter{sh}{10}
+
+\begin{description}[leftmargin=5em, style=sameline]
+	
+	\begin{lhp}{sh}{SH}{sh:Spieler}
+		\item [Name:] Spieler
+		\item [Beschreibung:] Menschliche Spieler.
+		\item [Ziele/Aufgaben:] Das Spiel zu spielen.
+	\end{lhp}
+	
+	\begin{lhp}{sh}{SH}{bsh:Spieler}
+		\item [Name:] Eltern
+		\item [Beschreibung:] Eltern minderjähriger Spieler.
+		\item [Ziele/Aufgaben:] Um die Spieler zu kümmern, indem Eltern Spielzeit begrenzen wollen und zugriff auf sensible Inhalte begrenzen.
+	\end{lhp}
+	
+	\begin{lhp}{sh}{SH}{bsh:gesetzgeber}
+		\item [Name:] Gesetzgeber
+		\item [Beschreibung:] Das Amt für Jugend und Familie.
+		\item [Ziele/Aufgaben:] Die Rechte der Spieler zu schützen und zu gewähren, indem er Gesetze erstellt.
+	\end{lhp}
+	
+	\begin{lhp}{sh}{SH}{bsh:investor}
+		\item [Name:] Investoren (nur für Beispielzwecken)
+		\item [Beschreibung:] Parteien, die das Finanzmittel für die Entwicklung des Systems bereitstellen.
+		\item [Ziele/Aufgaben:] Gewinn zu ermitteln, indem das System an Endverbraucher verkauft wird.
+	\end{lhp}
+	
+	\begin{lhp}{sh}{SH}{bsh:betreuer}
+		\item [Name:] Betreuer
+		\item [Beschreibung:] HiWis, die SEP Projektgruppen betreuen.
+		\item [Ziele/Aufgaben:] Das Entwicklungsprozess zu betreuen, zu überwachen und teilweise zu steuern als auch die Arbeit der Projektgruppen abzunehmen sowie den Studenten im Prozess Hilfe zur Verfügung zu stellen. 
+	\end{lhp}
+	
+	\begin{lhp}{sh}{SH}{bsh:prof}
+		\item [Name:] apl. Prof. Dr. Achim Ebert
+		\item [Beschreibung:] Ist der Schirmherr des ganzen Projektes 
+		\item [Ziele/Aufgaben:]  Falls die Hiwis Probleme haben können diese sich an den Prof. melden. Er organisiert die Veranstaltung und denkt sich in zusammenarbeit mit den Hiwis die Aufgaben aus.
+	\end{lhp}
+		
+\end{description}
+
+\section{Aktuelle Lage}
+
+Aktuell wird das Spiel so gespielt, dass die Spieler sich anmelden und sich folgend in einer Lobby wiederfinden. Ist eine bestimmte Anzahl an Teilnehmern erreicht, kann das Spiel gestartet werden. Ist eine Spielrunde zu Ende, so wechseln die Spieler zurück zur Lobby und das Leaderboard wird aktuallisiert. Aber dabei ist das noch nichts vom Spiel implementiert wurde und so nicht bekannt ist welche Probleme im laufe der Implementierung auftreten können. Das Projekt wird den Spielern ermöglichen entweder alleine gegen einen Bot zu spielen oder in einem Warteraum auf weitere Mitspieler zu warten und dann gemeinsam zu spielen. Des weiteren können die Spieler Einsicht auf einen Gesamtscore haben und sich damit untereinander vergleichen. Ebenfalls können sich die Spieler untereinander austauschen über einen Chat, um sich während des Spieles unterhalten zu können.Und die Eltern profitieren davon, dass sie genau sehen können, wie lang ihre Kinder das Spiel spielen. Gleichzeitig können sie für die Kinder eine maximale Spielzeit festlegen. Eine Spielrunde läuft nach den Regeln des Spiels "Kings in the Corner" ab. Die Regeln findet man \href{https://www.considerable.com/entertainment/card-games/kings-in-the-corner/}{hier}. Während der Spielrunde können die Spieler nur nach den Spielregeln erlaubte Züge durchführen. Dabei hat man für einen Zug nur eine bestimmte Zeit, um einen Spielfluss gewährleisten zu können. Die Zeit pro Spielzug wird zu einem späteren Zeitpunkt festgelegt.
+%\footnote{Hier wird beschrieben, wie die fachlichen Prozesse aktuell (also vor der Implementierung) abgewickelt werden und wieso es wichtig ist, das Projekt umzusetzen. Man kann hier auch auf die Bedürfnisse einzelner Stakeholder eingehen, muss aber nicht zwingend sein.}

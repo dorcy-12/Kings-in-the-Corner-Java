@@ -1,0 +1,132 @@
+\chapter{Systemtestfälle}
+
+Hier sollen verschiedene Szenarien beschrieben werden, mithilfe deren Sie später Systemtests ausführen und die erwarteten Ergebnisse darstellen.
+
+\newcounter{tf}\setcounter{tf}{10}
+
+\begin{description}[leftmargin=5em, style=sameline]
+
+\begin{lhp}{tf}{TF}{tests:anmeld}
+	\item [Name:] Spieler anmelden.
+	\item [Motivation:] Testet, ob die Anmeldung in das System korrekt funktioniert.
+	\item [Szenarien:] \hfill
+		\begin{enumerate}
+			\item \textit{Zugriffsdaten sind vorhanden und richtig} \\ $\implies$ Spieler wird in die Lobby bewegt.
+			\item \textit{Benutzername ist registriert, Passwort ist falsch} \\ $\implies$ Fehlermeldung wird angezeigt.
+			\item \textit{Benutzername ist nicht registriert} \\ $\implies$ Fehlermeldung wird angezeigt.
+		\end{enumerate}
+	\item [Relevante Systemfunktionen:] \ref{funk:zugriff}
+	\item [Relevante Use Cases:] \ref{uc:anmeld}
+\end{lhp}
+
+\begin{lhp}{tf}{TF}{tests:bearbeiten}
+	\item [Name:] Spieler bearbeiten.
+	\item [Motivation:] Testet, ob die Änderung der Daten in das System korrekt funktioniert.
+	\item [Szenarien:] \hfill
+		\begin{enumerate}
+			\item \textit{Profil Aktualisiert} \\ $\implies$ Spieler wird in die Lobby bewegt.
+			\item \textit{Neuer Benutzername ist schon vergeben:} \\ $\implies$ Fehlermeldung wird angezeigt.
+			\item \textit{Passwort entspricht nicht den Vorgaben:} \\ $\implies$ Fehlermeldung wird angezeigt.
+		\end{enumerate}
+	\item [Relevante Systemfunktionen:] \ref{funk:zugriff}
+	\item [Relevante Use Cases:] \ref{uc:bearbeiten}
+\end{lhp}
+
+\begin{lhp}{tf}{TF}{tests:chatten}
+	\item [Name:] Chatten.
+	\item [Motivation:] Testet, ob unerlabute Teilworte im Chat erkannt und zensiert werden.
+	\item [Szenarien:] \hfill
+		\begin{enumerate}
+			\item \textit{Die Chatnachricht enhält laut AGBs nicht erlaubte Teilworte:} \\ $\implies$ Das System zeigt eine Warnmeldung an, die Nachricht wird nicht in den Chatverlauf aufgenommen.
+		\end{enumerate}
+	\item [Relevante Systemfunktionen:] \ref{funk:chat}
+	\item [Relevante Use Cases:] \ref{uc:chatten}
+\end{lhp}
+
+\begin{lhp}{tf}{TF}{tests:registrieren}
+	\item [Name:] Spieler registrieren
+	\item [Motivation:] Testet, ob die Registrierung in das System korrekt funktioniert.
+	\item [Szenarien:] \hfill
+		\begin{enumerate}
+		        \item \textit{Benutzername ist schon vergeben:} \\ $\implies$  
+		        Das System zeigt eine Fehlermeldung an.
+				
+				\item \textit{Passwort entspricht nicht den Vorgaben:} \\ $\implies$ Das System zeigt eine Fehlermeldung an.
+				
+				\item \textit{Erfolgreiche Registrierung:} \\ $\implies$ Spieler wird zurück zum Login genommen.
+		\end{enumerate}
+	\item [Relevante Systemfunktionen:] \ref{funk:zugriff}
+	\item [Relevante Use Cases:] \ref{uc:registrieren}
+\end{lhp}
+
+\begin{lhp}{tf}{TF}{tests:löschen}
+	\item [Name:] Spieler löschen
+	\item [Motivation:] Testet, ob das Löschen eines Spielerkontos korrekt funktioniert.
+	\item [Szenarien:] \hfill
+		\begin{enumerate}
+		        \item \textit{Passwort ist falsch:} \\ $\implies$ Das System zeigt eine Fehlermeldung an.
+				\item \textit{Keine Löschung erwünscht:} \\ $\implies$ Das System System schließt den Dialog.
+				\item \textit{Konto Löschen:} \\ $\implies$ Das System System schließt den Dialog, löscht die Daten des Spielers und führt den Spieler zurück zur Anmeldung.
+		\end{enumerate}
+	\item [Relevante Systemfunktionen:] \ref{funk:zugriff}
+	\item [Relevante Use Cases:] \ref{uc:löschen}
+\end{lhp}
+
+\begin{lhp}{tf}{TF}{tests:spieler_hinzufügen}
+	\item [Name:] Spieler hinzufügen
+	\item [Motivation:] Testet, ob das Hinzufügen eines Spielers korrekt funktioniert.
+	\item [Szenarien:] \hfill
+		\begin{enumerate}
+		        \item \textit{Spieler mit angegebenen Benutzername ist nicht verfügbar:} \\ $\implies$ Das System zeigt eine Fehlermeldung an, anstatt des Schrittes 2.
+		\end{enumerate}
+	\item [Relevante Systemfunktionen:] \ref{funk:spielraum}
+	\item [Relevante Use Cases:] \ref{uc:Hinzufügen}
+\end{lhp}
+
+\begin{lhp}{tf}{TF}{tests:Bot_hinzufügen}
+	\item [Name:] Bot hinzufügen
+	\item [Motivation:] Testet, ob das Hinzufügen eines Bot-Spielers korrekt funktioniert.
+	\item [Szenarien:] \hfill
+		\begin{enumerate}
+		        \item \textit{Botname ist schon vergeben:}\\ $\implies$ Das System zeigt eine Fehlermeldung.
+		\end{enumerate}
+	\item [Relevante Systemfunktionen:] \ref{funk:spielraum}\ref{funk:bots}
+	\item [Relevante Use Cases:] \ref{uc:hinzufügen}
+\end{lhp}
+
+\begin{lhp}{tf}{TF}{tests:leaderboard}
+	\item [Name:] Leaderboard
+	\item [Motivation:] Testet, ob das Leaderboard korrekt funktioniert.
+	\item [Szenarien:] \hfill
+		\begin{enumerate}
+		        \item \textit{Keine Highscores vorhanden:} \\ $\implies$ Das System zeigt eine Hinweismeldung an.
+		        \item \textit{Highscores vorhanden:} \\ $\implies$ Das System zeigt alle Highscores mit den entsprechenden Spielern in absteigender Reihenfolge .
+		\end{enumerate}
+	\item [Relevante Systemfunktionen:] \ref{funk:bestenliste}
+	\item [Relevante Use Cases:] \ref{uc:leaderboard}
+\end{lhp}
+
+\begin{lhp}{tf}{TF}{tests:Spielen}
+	\item [Name:] Spielen
+	\item [Motivation:] Testet, ob das Spiel korrekt funktioniert.
+	\item [Szenarien:] \hfill
+		\begin{enumerate}
+		        \item \textit{Nicht genügend Spieler vorhanden:} \\ $\implies$ as System zeigt eine Fehlermeldung an.
+				
+				\item \textit{Der Spieler hat noch keine Karte gezogen während des momentanen Zugs:} \\ $\implies$  Der Spieler erhält eine Hinweismeldung, er kann seinen Zug fortsetzen.
+				
+				\item \textit{Die gewählte Verschiebung kann nach den Spielregeln nichtausgeführt werden:} \\ $\implies$ Der Spieler erhält eine Hinweismeldung und der Schritt wird wiederholt.
+				
+				\item \textit{Alle Teilnehmer sind für eine festgelegte Zeit abwesend:}\\ $\implies$ Das Spiel wird vom System beendet und es werden keine Highscores gespeichert.
+				
+				\item \textit{Der Nachziehstapel ist leer:}\\ $\implies$ Der Nachziehstapel wird neu aufgesetzt und Schritt 1 wird erneut ausgeführt.
+				
+				\item \textit{Die gewählte Karte kann nach den Spielregeln nicht ausgespielt werden:}\\ $\implies$ Der Spieler erhält eine Hinweismeldung und der Schritt wird wiederholt.
+				
+				\item \textit{Der Spieler führt für eine festgelegte Zeit keine Operation aus:}\\ $\implies$ Der Zug des
+				Spielers wird vom System beendet und der nächste Spieler ist am Zug.
+		\end{enumerate}
+	\item [Relevante Systemfunktionen:] \ref{funk:spielraum}\ref{funk:bots}\ref{funk:chat}\ref{funk:bestenliste}..
+	\item [Relevante Use Cases:] \ref{uc:Spielen}\ref{uc:Zug_Beenden}\ref{uc:Verschieben}\ref{uc:Spiel_beenden}\ref{uc:Ziehen}\ref{uc:karten_spielen} \ref{uc:Zug}
+\end{lhp}
+\end{description}

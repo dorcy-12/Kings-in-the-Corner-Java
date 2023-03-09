@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.Controller.ProfilBearbeitenController">
+   <children>
+      <Button fx:id="uebernehmen" layoutX="472.0" layoutY="324.0" mnemonicParsing="false" onAction="#uebernehmenButtonPressed" prefHeight="26.0" prefWidth="82.0" text="Ändern" AnchorPane.bottomAnchor="14.0" AnchorPane.rightAnchor="14.0" />
+      <Button fx:id="abbrechen" layoutX="32.0" layoutY="324.0" mnemonicParsing="false" onAction="#abbrechenButtonPressed" prefHeight="26.0" prefWidth="82.0" text="Abbrechen" textAlignment="JUSTIFY" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="14.0" />
+      <TextField fx:id="benutzername" layoutX="96.0" layoutY="21.0" onAction="#BenutzernameEingabe" prefHeight="26.0" prefWidth="220.0" promptText="Benutzername" AnchorPane.leftAnchor="96.0" AnchorPane.rightAnchor="84.0" AnchorPane.topAnchor="21.0" />
+      <PasswordField fx:id="passwort" layoutX="96.0" layoutY="57.0" onAction="#passwortEingabe" prefHeight="26.0" prefWidth="220.0" promptText="neues Passwort" AnchorPane.leftAnchor="96.0" AnchorPane.rightAnchor="84.0" AnchorPane.topAnchor="57.0" />
+      <PasswordField fx:id="passwortWiederholen" layoutX="96.0" layoutY="94.0" onAction="#passwordWiederholenEingabe" prefHeight="26.0" prefWidth="220.0" promptText="neues Passwort wiederholen" AnchorPane.leftAnchor="96.0" AnchorPane.rightAnchor="84.0" AnchorPane.topAnchor="94.0" />
+      <Button fx:id="profilLoeschen" layoutX="156.0" layoutY="215.0" mnemonicParsing="false" onAction="#profilLoeschenButtonPressed" prefHeight="26.0" prefWidth="99.0" text="Profil löschen" textFill="RED" AnchorPane.bottomAnchor="13.0" AnchorPane.leftAnchor="156.0" AnchorPane.rightAnchor="145.0" />
+      <TextField fx:id="errorFeld" alignment="CENTER" editable="false" layoutX="72.0" layoutY="128.0" onAction="#errorANzeigen" prefHeight="25.0" prefWidth="257.0" visible="false" AnchorPane.leftAnchor="72.0" AnchorPane.rightAnchor="71.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"m":"GUI","l":"Client"},{"m":"GUI","l":"GUI.Controller"},{"m":"GUI","l":"GUI.Klassen"},{"m":"GUI","l":"Server"},{"m":"GUI","l":"Server.Chat"},{"m":"GUI","l":"Server.Spiel"},{"m":"GUI","l":"Server.Zugriffsverwaltung"}];updateSearchResults();

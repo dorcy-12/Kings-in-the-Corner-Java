@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="421.0" prefWidth="596.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.Controller.RegistrierenController">
+   <children>
+      <CheckBox fx:id="agbsCheckBox" layoutX="159.0" layoutY="354.0" mnemonicParsing="false" onAction="#agbsCheckBoxPressed" text="Ich habe die AGBs gelesen und akzeptiere diese" AnchorPane.bottomAnchor="14.0" AnchorPane.topAnchor="389.5" />
+      <Button fx:id="registrieren" layoutX="486.0" layoutY="350.0" mnemonicParsing="false" onAction="#registrierenButtonPressed" text="Registrieren" AnchorPane.bottomAnchor="14.0" AnchorPane.rightAnchor="14.0" />
+      <Button fx:id="abbrechen" layoutX="33.0" layoutY="350.0" mnemonicParsing="false" onAction="#abbrechenButtonPressed" prefHeight="26.0" prefWidth="82.0" text="Abbrechen" textAlignment="JUSTIFY" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="14.0" />
+      <TextField fx:id="benutzername" layoutX="190.0" layoutY="122.0" maxHeight="-Infinity" maxWidth="-Infinity" onAction="#BenutzernameEingabe" prefHeight="26.0" prefWidth="220.0" promptText="Benutzername" AnchorPane.leftAnchor="190.0" AnchorPane.rightAnchor="186.0" AnchorPane.topAnchor="122.0" />
+      <PasswordField fx:id="passwort" layoutX="190.0" layoutY="175.0" onAction="#passwortEingabe" prefHeight="26.0" prefWidth="220.0" promptText="Passwort" AnchorPane.leftAnchor="190.0" AnchorPane.rightAnchor="186.0" AnchorPane.topAnchor="175.0" />
+      <PasswordField fx:id="passwortWiederholen" layoutX="190.0" layoutY="228.0" maxHeight="-Infinity" maxWidth="-Infinity" onAction="#passwordWiederholenEingabe" prefHeight="26.0" prefWidth="220.0" promptText="Passwort wiederholen" AnchorPane.leftAnchor="190.0" AnchorPane.rightAnchor="186.0" AnchorPane.topAnchor="228.0" />
+      <Button fx:id="agbsButton" layoutX="266.0" layoutY="317.0" mnemonicParsing="false" onAction="#agbsButtonPressed" prefHeight="26.0" prefWidth="60.0" text="ABGs" AnchorPane.bottomAnchor="78.0" />
+      <TextField fx:id="errorFeld" alignment="CENTER" editable="false" layoutX="172.0" layoutY="273.0" onAction="#errorAnzeigen" prefHeight="25.0" prefWidth="256.0" visible="false" AnchorPane.leftAnchor="172.0" AnchorPane.rightAnchor="168.0" />
+   </children>
+</AnchorPane>

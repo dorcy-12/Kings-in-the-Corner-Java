@@ -1,0 +1,12 @@
+# Ignore Gradle project-specific cache directory
+Implementierung/.gradle
+
+# Ignore Gradle build output directory
+Implementierung/build
+
+# Ignore IntelliJ IDEA specific things.
+Implementierung/.idea
+
+Implementierung/.settings
+Implementierung/.classpath
+Implementierung/bin

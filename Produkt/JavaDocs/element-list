@@ -1,0 +1,8 @@
+module:GUI
+Client
+GUI.Controller
+GUI.Klassen
+Server
+Server.Chat
+Server.Spiel
+Server.Zugriffsverwaltung

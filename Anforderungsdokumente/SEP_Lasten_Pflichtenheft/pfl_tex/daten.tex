@@ -1,0 +1,24 @@
+\subsection{Data-Dictionary}
+
+Hier sollen die Daten detalliert beschrieben werden, die im System verwendet werden. (sehe https://de.wikipedia.org/wiki/Data-Dictionary)
+
+\paragraph{Fachlich-Bedingte Daten}\footnote{hier sollen die Fachlich-Bedingte Daten formalisiert werden}
+
+\begin{itemize}
+	\item[\ref{daten:benutzername}] Benutzername*\footnote{``*'' bedeutet hier, dass die Daten in der Datenbank zu speichern sind} = string
+	\item[\ref{daten:benutzername}] Passwort* = string
+\end{itemize}
+
+\paragraph{Technisch-Bedingte Daten}\footnote{hier sollen Sie überlegen, ob Sie weitere Datenformate technisch-bedingt brauchen}
+
+\newcounter{pd}\setcounter{pd}{10}
+
+\begin{description}[leftmargin=5em, style=sameline]
+	
+	\begin{lhp}{pd}{PD}{datadict:benutzername}
+		\item [Name:] Zugriffsdaten*\footnote{``*'' bedeutet hier, dass die Daten in der Datenbank zu speichern sind}
+		\item [Motivation:] Vereinfachung von Classendiagramm (wirklich so?) sowie vereinfachung von Anforderungen und Dokumentation.
+		\item [Data-Dictionary Ausdruck]: Zugriffsdaten = Benutzername + Passwort
+		\item [Relevante Systemfunktionen:]  \ref{funk:spielverw}, \ref{funk:zugriff}
+	\end{lhp}
+\end{description}

@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<SplitPane dividerPositions="0.7662576687116565" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefHeight="817.0" prefWidth="831.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.Controller.IngameController">
+   <items>
+      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="444.0" prefWidth="908.0">
+         <children>
+            <Button fx:id="farblichSortieren" layoutX="10.0" layoutY="536.0" mnemonicParsing="false" onAction="#farblichSortierenButtonPressed" prefHeight="26.0" prefWidth="110.0" text="farblich sort." AnchorPane.bottomAnchor="46.0" AnchorPane.leftAnchor="10.0" />
+            <Button fx:id="aufsteigenSortierend" layoutX="9.0" layoutY="496.0" mnemonicParsing="false" onAction="#aufsteigenSortierendButtonPressed" prefHeight="26.0" prefWidth="110.0" text="aufsteigend sort." AnchorPane.bottomAnchor="86.0" AnchorPane.leftAnchor="9.0" />
+            <ImageView fitHeight="38.0" fitWidth="39.0" layoutX="287.0" layoutY="83.0" pickOnBounds="true" preserveRatio="true" />
+            <Button fx:id="spielregeln" layoutX="474.0" layoutY="14.0" mnemonicParsing="false" onAction="#spielregelnButtonPressed" prefHeight="26.0" prefWidth="110.0" text="Spielregeln" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="14.0" />
+            <TextField fx:id="anzahlChips" alignment="CENTER" layoutX="14.0" layoutY="15.0" prefHeight="26.0" prefWidth="110.0" text="Anzahl Chips: 13" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="14.0" />
+            <AnchorPane fx:id="spielfeld" layoutX="168.0" layoutY="26.0" prefHeight="512.0" prefWidth="531.0" AnchorPane.leftAnchor="168.0" AnchorPane.rightAnchor="130.0" AnchorPane.topAnchor="26.0">
+               <children>
+                  <ImageView fx:id="karteUntenUnten" fitHeight="120.0" fitWidth="100.0" layoutX="205.0" layoutY="321.0" onMouseClicked="#karteUntenUntenAusgewaehlt" pickOnBounds="true" preserveRatio="true" AnchorPane.topAnchor="321.0">
+                     <image>
+                        <Image url="@Images/Herz8.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="karteRechtsUnten" fitHeight="120.0" fitWidth="100.0" layoutX="347.0" layoutY="157.0" onMouseClicked="#karteRechtsUntenAusgewaehlt" pickOnBounds="true" preserveRatio="true" rotate="90.0" AnchorPane.topAnchor="157.0">
+                     <image>
+                        <Image url="@Images/Herz3.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="karteObenLinksUnten" fitHeight="120.0" fitWidth="100.0" layoutX="73.0" layoutY="44.0" onMouseClicked="#karteObenLinksAusgewaehlt" pickOnBounds="true" preserveRatio="true" rotate="-45.0" AnchorPane.topAnchor="44.0">
+                     <image>
+                        <Image url="@Images/Kreuz8.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="karteLinksUnten" fitHeight="120.0" fitWidth="100.0" layoutX="37.0" layoutY="159.0" onMouseClicked="#karteLinksUntenAusgewaehlt" pickOnBounds="true" preserveRatio="true" rotate="90.0" AnchorPane.topAnchor="159.0">
+                     <image>
+                        <Image url="@Images/Karo9.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="karteObenRechtsUnten" fitHeight="120.0" fitWidth="100.0" layoutX="325.0" layoutY="41.0" onMouseClicked="#karteObenRechtsUntenAusgewaehlt" pickOnBounds="true" preserveRatio="true" rotate="45.0" AnchorPane.topAnchor="41.0">
+                     <image>
+                        <Image url="@Images/Poker-sm-212-Ks.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="karteUntenRechtsUnten" fitHeight="120.0" fitWidth="100.0" layoutX="300.0" layoutY="275.0" onMouseClicked="#karteUntenRechtsUntenAusgewaehlt" pickOnBounds="true" preserveRatio="true" rotate="-45.0" AnchorPane.topAnchor="274.0">
+                     <image>
+                        <Image url="@Images/PikDame.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="karteUntenLinksUnten" fitHeight="120.0" fitWidth="100.0" layoutX="87.0" layoutY="274.0" onMouseClicked="#karteUntenLinksUntenAusgewaehlt" pickOnBounds="true" preserveRatio="true" rotate="45.0" AnchorPane.topAnchor="274.0">
+                     <image>
+                        <Image url="@Images/Poker-sm-212-Ks.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="karteObenUnten" fitHeight="120.0" fitWidth="100.0" layoutX="195.0" layoutY="4.0" onMouseClicked="#karteObenUntenAusgewaehlt" pickOnBounds="true" preserveRatio="true" AnchorPane.topAnchor="4.0">
+                     <image>
+                        <Image url="@Images/Poker-sm-212-Ks.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="karteLinksOben" fitHeight="120.0" fitWidth="100.0" layoutX="16.0" layoutY="160.0" onMouseClicked="#karteLinksObenAusgewaehlt" pickOnBounds="true" preserveRatio="true" rotate="90.0" AnchorPane.topAnchor="157.0">
+                     <image>
+                        <Image url="@Images/Karo9.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="karteUntenLinksOben" fitHeight="120.0" fitWidth="100.0" layoutX="60.0" layoutY="295.0" onMouseClicked="#karteUntenLinksObenAusgewaehlt" pickOnBounds="true" preserveRatio="true" rotate="45.0" AnchorPane.topAnchor="295.0">
+                     <image>
+                        <Image url="@Images/Poker-sm-212-Ks.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="karteUntenOben" fitHeight="120.0" fitWidth="100.0" layoutX="204.0" layoutY="340.0" onMouseClicked="#karteUntenObenAusgewaehlt" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Images/Herz8.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="karteUntenRechtsOben" fitHeight="120.0" fitWidth="100.0" layoutX="323.0" layoutY="295.0" onMouseClicked="#karteUntenRechtsObenAusgewaehlt" pickOnBounds="true" preserveRatio="true" rotate="-45.0" AnchorPane.topAnchor="295.0">
+                     <image>
+                        <Image url="@Images/PikDame.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="karteRechtsOben" fitHeight="120.0" fitWidth="100.0" layoutX="376.0" layoutY="159.0" onMouseClicked="#karteRechtsObenAusgewaehlt" pickOnBounds="true" preserveRatio="true" rotate="-90.0" AnchorPane.topAnchor="159.0">
+                     <image>
+                        <Image url="@Images/Herz3.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="karteObenOben" fitHeight="120.0" fitWidth="100.0" layoutX="197.0" layoutY="-23.0" onMouseClicked="#karteObenObenAusgewaehlt" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Images/Poker-sm-212-Ks.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="karteObenLinksOben" fitHeight="120.0" fitWidth="100.0" layoutX="52.0" layoutY="24.0" onMouseClicked="#karteObenLinksObenAusgewaehlt" pickOnBounds="true" preserveRatio="true" rotate="-45.0" AnchorPane.topAnchor="24.0">
+                     <image>
+                        <Image url="@Images/leereKarte.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView id="chippotHintergrund" fx:id="cippotHintergrund" fitHeight="161.0" fitWidth="180.0" layoutX="144.0" layoutY="137.0" pickOnBounds="true" preserveRatio="true" AnchorPane.topAnchor="137.0">
+                     <image>
+                        <Image url="@Images/Pokerchip.png" />
+                     </image>
+                  </ImageView>
+                  <Label id="chippotLabel" fx:id="chippotLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="201.0" layoutY="207.0" text="Label" textAlignment="CENTER" textFill="WHITE" />
+                  <ImageView fx:id="karteObenRechtsOben" fitHeight="120.0" fitWidth="100.0" layoutX="347.0" layoutY="21.0" onMouseClicked="#karteObenRechtsObenAusgewaehlt" pickOnBounds="true" preserveRatio="true" rotate="45.0" AnchorPane.topAnchor="21.0">
+                     <image>
+                        <Image url="@Images/Poker-sm-212-Ks.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <ImageView fx:id="ziehstabel" fitHeight="120.0" fitWidth="100.0" layoutX="693.0" layoutY="243.0" onMouseClicked="#ziehstabelausgewaehlt" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="58.80000305175781" AnchorPane.topAnchor="243.0">
+               <image>
+                  <Image url="@Images/RueckseiteKarte.png" />
+               </image>
+            </ImageView>
+            <TextField fx:id="errorFeld" editable="false" layoutX="19.0" layoutY="110.0" visible="false" AnchorPane.leftAnchor="19.0" AnchorPane.topAnchor="110.0" />
+            <TextField fx:id="amZugFeld" layoutX="14.0" layoutY="178.0" prefHeight="25.0" prefWidth="62.0" promptText="Am Zug" visible="false" />
+            <TextField fx:id="punkteFeld" alignment="CENTER" layoutX="14.0" layoutY="49.0" prefHeight="25.0" prefWidth="110.0" promptText="Punkte: 0" />
+            <ScrollPane hbarPolicy="ALWAYS" hmax="10.0" layoutX="127.0" layoutY="210.0" prefHeight="117.0" prefWidth="684.0" vbarPolicy="ALWAYS" AnchorPane.bottomAnchor="2.0" AnchorPane.leftAnchor="127.0">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="131.0" prefWidth="1511.0">
+                     <children>
+                        <ImageView fx:id="eigeneKarte3" fitHeight="100.0" fitWidth="80.0" layoutX="122.0" layoutY="8.0" onMouseClicked="#eigeneKarte3ausgewaehlt" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="165.0" AnchorPane.topAnchor="10.0">
+                           <image>
+                              <Image url="@Images/HerzAss.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="eigeneKarte7" fitHeight="100.0" fitWidth="80.0" layoutX="342.0" layoutY="8.0" onMouseClicked="#eigeneKarte7ausgewaehlt" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="465.0" AnchorPane.topAnchor="10.0">
+                           <image>
+                              <Image url="@Images/KreuzDame.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="eigeneKarte4" fitHeight="100.0" fitWidth="80.0" layoutX="178.0" layoutY="8.0" onMouseClicked="#eigeneKarte4ausgewaehlt" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="240.0" AnchorPane.topAnchor="10.0">
+                           <image>
+                              <Image url="@Images/Herz5.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="eigeneKarte5" fitHeight="120.0" fitWidth="64.0" layoutX="233.0" layoutY="8.0" onMouseClicked="#eigeneKarte5ausgewaehlt" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="315.0" AnchorPane.topAnchor="10.0">
+                           <image>
+                              <Image url="@Images/Karo10.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="eigeneKarte2" fitHeight="100.0" fitWidth="80.0" layoutX="69.0" layoutY="8.0" onMouseClicked="#eigeneKarte2ausgewaehlt" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="90.0" AnchorPane.topAnchor="10.0">
+                           <image>
+                              <Image url="@Images/PikKoenig.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="eigeneKarte1" fitHeight="100.0" fitWidth="80.0" layoutX="14.0" layoutY="4.0" onMouseClicked="#eigeneKarte1ausgewaehlt" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="10.0">
+                           <image>
+                              <Image url="@Images/Pik2.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="eigeneKarte6" fitHeight="100.0" fitWidth="80.0" layoutX="286.0" layoutY="8.0" onMouseClicked="#eigeneKarte6ausgewaehlt" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="390.0" AnchorPane.topAnchor="10.0">
+                           <image>
+                              <Image url="@Images/Pik7.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="eigeneKarte8" fitHeight="100.0" fitWidth="80.0" layoutX="400.0" layoutY="5.0" onMouseClicked="#eigeneKarte8ausgewaehlt" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="540.0" AnchorPane.topAnchor="10.0">
+                           <image>
+                              <Image url="@Images/KreuzDame.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="eigeneKarte9" fitHeight="100.0" fitWidth="80.0" layoutX="410.0" layoutY="15.0" onMouseClicked="#eigeneKarte9ausgewaehlt" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="615.0" AnchorPane.topAnchor="10.0">
+                           <image>
+                              <Image url="@Images/KreuzDame.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="eigeneKarte10" fitHeight="100.0" fitWidth="80.0" layoutX="296.0" layoutY="18.0" onMouseClicked="#eigeneKarte10ausgewaehlt" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="690.0" AnchorPane.topAnchor="10.0">
+                           <image>
+                              <Image url="@Images/Pik7.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="eigeneKarte11" fitHeight="100.0" fitWidth="80.0" layoutX="306.0" layoutY="28.0" onMouseClicked="#eigeneKarte11ausgewaehlt" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="765.0" AnchorPane.topAnchor="10.0">
+                           <image>
+                              <Image url="@Images/Pik7.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="eigeneKarte12" fitHeight="100.0" fitWidth="80.0" layoutX="316.0" layoutY="38.0" onMouseClicked="#eigeneKarte12ausgewaehlt" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="840.0" AnchorPane.topAnchor="10.0">
+                           <image>
+                              <Image url="@Images/Pik7.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="eigeneKarte13" fitHeight="100.0" fitWidth="80.0" layoutX="316.0" layoutY="38.0" onMouseClicked="#eigeneKarte13ausgewaehlt" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="915.0" AnchorPane.topAnchor="10.0">
+                           <image>
+                              <Image url="@Images/Pik7.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="eigeneKarte14" fitHeight="100.0" fitWidth="80.0" layoutX="316.0" layoutY="38.0" onMouseClicked="#eigeneKarte14ausgewaehlt" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="990.0" AnchorPane.topAnchor="10.0">
+                           <image>
+                              <Image url="@Images/Pik7.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="eigeneKarte15" fitHeight="100.0" fitWidth="80.0" layoutX="316.0" layoutY="38.0" onMouseClicked="#eigeneKarte15ausgewaehlt" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="1065.0" AnchorPane.topAnchor="10.0">
+                           <image>
+                              <Image url="@Images/Pik7.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="eigeneKarte16" fitHeight="100.0" fitWidth="80.0" layoutX="316.0" layoutY="38.0" onMouseClicked="#eigeneKarte16ausgewaehlt" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="1140.0" AnchorPane.topAnchor="10.0">
+                           <image>
+                              <Image url="@Images/Pik7.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="eigeneKarte17" fitHeight="100.0" fitWidth="80.0" layoutX="326.0" layoutY="48.0" onMouseClicked="#eigeneKarte17ausgewaehlt" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="1215.0" AnchorPane.topAnchor="10.0">
+                           <image>
+                              <Image url="@Images/Pik7.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="eigeneKarte18" fitHeight="100.0" fitWidth="80.0" layoutX="336.0" layoutY="58.0" onMouseClicked="#eigeneKarte18ausgewaehlt" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="1290.0" AnchorPane.topAnchor="10.0">
+                           <image>
+                              <Image url="@Images/Pik7.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="eigeneKarte19" fitHeight="100.0" fitWidth="80.0" layoutX="346.0" layoutY="68.0" onMouseClicked="#eigeneKarte19ausgewaehlt" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="1365.0" AnchorPane.topAnchor="10.0">
+                           <image>
+                              <Image url="@Images/Pik7.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </ScrollPane>
+         </children></AnchorPane>
+      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="208.0" prefWidth="952.0">
+         <children>
+            <TextField fx:id="neueChatnachricht" layoutX="-2.0" layoutY="69.0" onKeyPressed="#neueChatnachrichtAbgeschickt" prefHeight="26.0" prefWidth="467.0" promptText="neue Nachricht" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="131.0" />
+            <Button layoutX="474.0" layoutY="56.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="110.0" text="Spiel verlassen" AnchorPane.bottomAnchor="48.0" AnchorPane.rightAnchor="14.0" />
+            <Button fx:id="rangtabelle" layoutX="474.0" layoutY="22.0" mnemonicParsing="false" onAction="#rangtabelleButtonPressed" prefHeight="26.0" prefWidth="110.0" text="Rangtabelle " AnchorPane.bottomAnchor="48.0" AnchorPane.rightAnchor="14.0" />
+            <TextArea fx:id="chatNachrichtenFeld" layoutX="-2.0" layoutY="-1.0" prefHeight="69.0" prefWidth="467.0" AnchorPane.bottomAnchor="28.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="131.0" AnchorPane.topAnchor="0.0" />
+            <Button fx:id="spielVerlassen" layoutX="474.0" layoutY="56.0" mnemonicParsing="false" onAction="#spielVerlassenButtonPressed" prefHeight="26.0" prefWidth="110.0" text="Spiel verlassen" AnchorPane.bottomAnchor="14.0" AnchorPane.rightAnchor="14.0" />
+         </children></AnchorPane>
+   </items>
+</SplitPane>

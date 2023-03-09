@@ -1,0 +1,75 @@
+
+\section{Produktdaten}\label{section:productdaten}
+
+Hier sollen die Daten genannt werden, die im System verwendet werden.
+
+\newcounter{ld}\setcounter{ld}{10}
+
+\begin{description}[leftmargin=5em, style=sameline]
+	
+	\begin{lhp}{ld}{LD}{daten:benutzername}
+		\item [Name:] Benutzername*\footnote{``*'' bedeutet hier, dass die Daten in der Datenbank zu speichern sind}
+		\item [Fachliche Beschreibung:] Benutzername des Spielers
+		\item [Relevante Systemfunktionen:] \ref{funk:spielverw}, \ref{funk:zugriff}
+	\end{lhp}
+	
+	\begin{lhp}{ld}{LD}{daten:passwort}
+		\item [Name:] Passwort*
+		\item [Fachliche Beschreibung:] Passwort des Spielers
+		\item [Relevante Systemfunktionen:] \ref{funk:zugriff}
+	\end{lhp}
+	
+	\begin{lhp}{ld}{LD}{daten:chatverlauf}
+		\item [Name:] Chatverlauf°\footnote{``°'' bedeutet hier, dass die Daten lokal bei den jeweiligen Spielern zu speichern sind}
+		\item [Fachliche Beschreibung:] Chatverlauf einer Spielersession
+		\item [Relevante Systemfunktionen:] \ref{funk:chat}
+	\end{lhp}
+	
+	\begin{lhp}{ld}{LD}{daten:chat-eingabe}
+		\item [Name:] Chat-Eingabe°
+		\item [Fachliche Beschreibung:] Chat-Eingabe eines Spielers
+		\item [Relevante Systemfunktionen:] \ref{funk:chat}
+	\end{lhp}
+	
+	\begin{lhp}{ld}{LD}{daten:highscores}
+		\item [Name:] Highscores*
+		\item [Fachliche Beschreibung:] Highscores aller Spieler
+		\item [Relevante Systemfunktionen:] \ref{funk:bestenliste}
+	\end{lhp}
+	
+	\begin{lhp}{ld}{LD}{daten:spielraumname}
+		\item [Name:] Spielraumname
+		\item [Fachliche Beschreibung:] Name eines Spielraums
+		\item [Relevante Systemfunktionen:] \ref{funk:spielraum}
+	\end{lhp}
+	
+	\begin{lhp}{ld}{LD}{daten:spielraumpasswort}
+		\item [Name:] Spielraumpasswort
+		\item [Fachliche Beschreibung:] Passwort eines Spielraums
+		\item [Relevante Systemfunktionen:] \ref{funk:spielraum}
+	\end{lhp}
+	
+	\begin{lhp}{ld}{LD}{daten:botname}
+		\item [Name:] Botname
+		\item [Fachliche Beschreibung:] Name eines Bots
+		\item [Relevante Systemfunktionen:] \ref{funk:bots}
+	\end{lhp}
+	
+	\begin{lhp}{ld}{LD}{daten:karten}
+		\item [Name:] Karten
+		\item [Fachliche Beschreibung:] Die verschiedenen Spielkarten
+		\item [Relevante Systemfunktionen:] \ref{funk:spielverw}
+	\end{lhp}
+	
+	\begin{lhp}{ld}{LD}{daten:kartenstappel}
+		\item [Name:] Kartenstappel
+		\item [Fachliche Beschreibung:] Die einzelnen Kartenstappel während eines Spiels
+		\item [Relevante Systemfunktionen:] \ref{funk:spielverw}
+	\end{lhp}
+	
+	\begin{lhp}{ld}{LD}{daten:handkarten}
+		\item [Name:] Handkarten
+		\item [Fachliche Beschreibung:] Die Handkarten der Spieler
+		\item [Relevante Systemfunktionen:] \ref{funk:spielverw}
+	\end{lhp}
+\end{description}

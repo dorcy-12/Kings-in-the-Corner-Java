@@ -1,0 +1,8 @@
+Video (10min):
+- Spiel Funktionen vorstellen und eine schnelle Runde spielen (bei Runde spielen dazu erzählen)
+- Auf die Tests eingehen 
+- Auf die Funktion Kartenspielen eingehen
+
+Rest(10min)
+- kurz vorstellen, wo waren wir zu Beginn, was haben wir im Verlauf geändert
+- Fragen beantworten

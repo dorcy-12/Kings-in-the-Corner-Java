@@ -1,0 +1,28 @@
+\input{preamble}
+\input{custom_commands}
+
+\makeatletter
+	\newcommand{\mysubject}{Lastenheft}
+	\newcommand{\mygroup}{Gruppe 2}
+	\newcommand{\myauthor}{%
+		Hendrik Wolf \\
+		Fabian Dietrich \\
+		Yannic Schopfer \\
+		Ryan Antipow \\
+		Dorcy Agape Hakizimana %
+		}
+\makeatother
+
+\begin{document}
+
+	\include{titlepage}
+
+	\tableofcontents
+
+	\include{las_tex/treiber}
+	\include{las_tex/beschraenkungen}
+	\include{las_tex/funktional}
+	%gehört eher in das Pflichtenheft \include{las_tex/daten}
+	\include{las_tex/nichtfunktional}
+	\include{las_tex/warteraum}
+\end{document}

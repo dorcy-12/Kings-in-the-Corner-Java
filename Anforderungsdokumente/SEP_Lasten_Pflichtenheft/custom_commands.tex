@@ -1,0 +1,27 @@
+\makeatletter
+\def\namedlabel#1#2{\begingroup
+    #2%
+    \def\@currentlabel{#2}%
+    \phantomsection\label{#1}\endgroup
+}
+\makeatother
+
+\newenvironment{lhp}[3]%
+{%
+	\item [\namedlabel{#3}{/#2\arabic{#1}/}]% \hfill%
+	\addtocounter{#1}{10}%
+	\begin{description}[leftmargin=0cm, style=sameline]%
+}%
+{%
+	\end{description}%
+}
+
+\newenvironment{php}[4]%
+{%
+	\item [\namedlabel{#4}{/#2\arabic{#1}/} (\ref{#3})] \hfill%
+	\addtocounter{#1}{10}%
+	\begin{description}[style=sameline]%
+}%
+{%
+	\end{description}%
+}

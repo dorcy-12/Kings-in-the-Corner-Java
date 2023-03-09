@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.Controller.SpielregelnController">
+   <children>
+      <TextArea fx:id="textFeld" editable="false" prefHeight="400.0" prefWidth="600.0" text="Ziel des Spiels:&#10;Ziel einer jeden Runde ist es als erster Spieler alle seine Handkarten leer zu bekommen um Punkte gut geschrieben zu bekommen um am Ende als erster die Marke von 100 Punkten zu erreichen.&#10;&#10;Spielstart:&#10;Jeder Spieler erhält zu beginn einer jeden Spielrunde sieben Handkarten und die 80 Chips werden gerecht aufgeteilt an alle Spieler. Das Spielfeld besteht aus einem Nachziehstapel und jeweils acht Ablagestapel, wobei die Ablagestapel in den Ecken die Stapel für die Könige sind und zu beginn leer bleiben.&#10;&#10;Spielzüge:&#10;1. Spiele eine passende Karte aus der Hand auf einen der ablegestapel ist einer der oben, unten, linken, rechten Ablagestapel leer, darf man jede beliebige Karte  darauf legen. Die Karten müssen immer abwechselnd nach Frabe gespielt werden und immer Absteigend. Also auf einen roten König eine schwarze Dame und dann wieder ein roter Junge usw.&#10;2. Spiele einen &quot;King in the corner&quot;, auf deutsch einen &quot;König in der Ecke&quot;. Könige sind die einzigen Karten, die in die Ecken zwischen den 4 anderen Spielstapeln gespielt werden dürfen. Nachdem ein König gelegt wurde ist der neu entstandene Stapel als normaler Spielstapel zu behandeln.&#10;Bewege einen Spielstapel auf einen anderen Spielstapel. Dies ist möglich, wenn die unterste Karte des zu bewegenden Stapels den nächst niedrigeren Wert zu der obersten Karte des anderen Stapels hält.&#10;Wird keine Handkarte abgelegt wird vom Spieler einen Coin als Strafe in den Pot gelegt.&#10;&#10;Spielende:&#10;Das Spiel endet, sobald ein Spieler seine letzte Handkarte ausspielt. Dieser Spieler ist der Sieger der Spielrunde. Anschließend werden die Werte der verbleibenden Handkarten der anderen Spieler jeweils zusammengezählt und mit den CHips aus dem Topf addiert und auf das Punktekonto des Siegers gutgeschrieben. Hat keiner der Spieler die 100 Punkte erreicht wird eine neue Runde gespielt. &#10;Werden die 100 Punkte erreicht bekommt die Spieler ihre erreichten Punkte gutgeschrieben." wrapText="true">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextArea>
+   </children>
+</AnchorPane>

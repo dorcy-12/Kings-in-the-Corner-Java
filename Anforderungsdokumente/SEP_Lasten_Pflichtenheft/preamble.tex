@@ -1,0 +1,30 @@
+\documentclass[11pt, a4paper, oneside]{memoir}                                                      %%
+
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman]{babel}     % new german spelling, umlauts and other regional settings like date format
+\usepackage[shortlabels]{enumitem}
+\usepackage{nameref,zref-xr}
+\zxrsetup{toltxlabel}
+\usepackage{graphicx}           % allow for inclusion of images
+\usepackage[table,svgnames]{xcolor} % define colors
+\usepackage{url}                % weblinks, etc.
+\usepackage{colortbl}           % colored table cells
+\usepackage{longtable}          % tables, which are longer than one page
+\usepackage{hyperref}
+\usepackage[intlimits]{mathtools}
+\hypersetup{
+	bookmarksopen=true,                       % expand bookmark tree in acrobat by default
+	pdftitle={SEPMP},                         % set title in meta pdf information
+	pdfauthor={Teilnehmer 1, Teilnehmer 2, Teilnehmer 3},                             % set author in meta pdf information
+	pdfsubject={},                            % set subject in meta pdf information
+	pdfkeywords={},                           % set keyword list in meta pdf information
+	colorlinks=true,                          % use colored links instead of black ones
+	linkcolor=blue,                           % color for internal links
+	anchorcolor=black,                        % color for anchor links
+	citecolor=black,                          % color for bibliography links
+	filecolor=magenta,                        % color for system local links
+	urlcolor=blue,                            % color for url links
+	plainpages=false,                         % must be false, so that PDF bookmarks work properly
+	hypertexnames=false,                      % use guessable names for links; used for correct bookmarks
+	linktocpage                               % link page numbers in toc instead of section names
+}
